@@ -8,5 +8,5 @@ RUN mkdir -p /opt/app
 COPY ./app.py /opt/app
 RUN chmod +x /opt/app/app.py 
 ENV FLASK_PORT 8080
-EXPORT 8080
+EXPOSE 8080
 CMD /opt/app/app.py
